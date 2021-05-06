@@ -1,0 +1,106 @@
+.details {
+  &-planet1 {
+    position: absolute;
+    left: -0.82rem;
+    top: 1.6rem;
+    width: 1.64rem;
+    height: 1.65rem;
+    overflow: hidden;
+
+    background: {
+      image: url($staticUrl+'img/detail_planet1.png');
+      size: 100%;
+      position: center;
+      repeat: no-repeat;
+    }
+
+    animation: planet 1s infinite alternate linear;
+  }
+
+  &-planet2 {
+    position: absolute;
+    right: -0.75rem;
+    top: 7.4rem;
+    width: 1.23rem;
+    height: 1.22rem;
+    overflow: hidden;
+
+    background: {
+      image: url($staticUrl+'img/detail_planet2.png');
+      size: 100%;
+      position: center;
+      repeat: no-repeat;
+    }
+
+    animation: planet 0.8s infinite alternate linear;
+  }
+
+  &-2 {
+    &-title {
+      position: relative;
+      margin: 0 auto;
+      width: 5.55rem;
+      height: 4.05rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.1rem;
+
+      background: {
+        image: url($staticUrl+'img/detail_2_title.png');
+        size: 100%;
+        position: center;
+        repeat: no-repeat;
+      }
+    }
+
+    &-subtext {
+      position: relative;
+      font-size: .24rem;
+      color: #f7f9ff;
+      line-height: 2;
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+
+    &-btn {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      width: 4.67rem;
+      height: .9rem;
+      line-height: 0.8rem;
+      text-align: center;
+      font-size: .36rem;
+      color: #f7f9ff;
+      text-decoration: none;
+
+      background: {
+        image: url($staticUrl+'img/detail_btn.png');
+        size: 100%;
+        position: center;
+        repeat: no-repeat;
+      }
+
+      animation: shake 2s 1s infinite both;
+    }
+  }
+
+  &-dialogue {
+    .details-dialogue-content2 {
+      background-size: 6.5rem 1.35rem;
+      font-size: 0.42rem;
+      margin-top: 2.25rem;
+    }
+
+    .details-dialogue-ufo2 {
+      top: 1.4rem;
+      right: 1rem;
+      width: 2.13rem;
+      height: 2rem;
+      background-image: url($staticUrl+'img/detail_ufo_2.png');
+    }
+  }
+}
+
+.details-dialogue-ufo {
+  animation: ufo 1s infinite alternate linear;
+}

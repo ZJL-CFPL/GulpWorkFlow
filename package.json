@@ -1,0 +1,55 @@
+{
+  "name": "h5-project",
+  "version": "1.0.0",
+  "description": "perpower h5 project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/perpower/H5-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "cli-color": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-font-spider": "^0.3.6",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-nunjucks": "^3.1.1",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.1.0",
+    "moment": "^2.22.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "colorthief": "^2.3.0",
+    "grunt": "^1.1.0",
+    "koa": "^2.11.0",
+    "koa-body": "^2.5.0",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "nunjucks": "^3.1.2",
+    "rgbaster": "^2.1.1",
+    "yargs": "^11.0.0"
+  }
+}

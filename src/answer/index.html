@@ -1,0 +1,66 @@
+{% extends "./_njk/base.njk" %}
+{# cdn版本 #}
+{% set staticUrl='./' %}
+{% set cdnUrl='./' %}
+
+{# 本地测试版本 #}
+{# {% set staticUrl = './' %} #}
+{# {% set cdnUrl = './' %} #}
+{% block main %}
+<div class="box">
+  <!-- 音乐icon -->
+  <div class="music paused"></div>
+  <!-- 首页 -->
+  {% include "./_njk/index.njk" %}
+
+  <!-- 详情页1 -->
+  {% include "./_njk/detail_1.njk" %}
+
+  <!-- 详情页2 -->
+  {% include "./_njk/detail_2.njk" %}
+
+  <div class="wrap">
+    <!-- 活动规则 -->
+    <div class="item">
+      <!-- 详情页10 -->
+      {% include "./_njk/detail_10.njk" %}
+    </div>
+    <!-- 答题页 -->
+    <div class="item">
+      {% include "./_njk/detail_3.njk" %}
+    </div>
+    <!-- 答题内页 -->
+    <div class="item">
+      <!-- 详情页4 -->
+      {% include "./_njk/detail_4.njk" %}
+    </div>
+    <div class="item">
+      <!-- 详情页5 -->
+      {% include "./_njk/detail_5.njk" %}
+    </div>
+    <div class="item">
+      <!-- 详情页6 -->
+      {% include "./_njk/detail_6.njk" %}
+    </div>
+    <div class="item">
+      <!-- 详情页7 -->
+      {% include "./_njk/detail_7.njk" %}
+    </div>
+    <!-- 长屏 -->
+    <div class="item">
+      <!-- 详情页8 -->
+      {% include "./_njk/detail_8.njk" %}
+    </div>
+  </div>
+
+  <!-- 详情页9 -->
+  {% include "./_njk/detail_9.njk" %}
+
+</div>
+{% endblock %}
+{% block javascript %}
+<script src="{{staticUrl}}js/zepto.min.js"></script>
+<script src="{{staticUrl}}js/howler.min.js"></script>
+<script src="{{staticUrl}}js/iSlider.min.js"></script>
+<script src="{{staticUrl}}js/index.js"></script>
+{% endblock %}

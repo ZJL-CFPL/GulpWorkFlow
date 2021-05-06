@@ -1,0 +1,69 @@
+{% extends "../_njk/base.njk" %}
+{% block main %}
+<!-- <div class="box-bg"></div> -->
+<div class="container">
+  <div class="marquee">
+    <ul class="marquee-items">
+      <li>简单的跑马灯实现方式1</li>
+      <li>简单的跑马灯实现方式2</li>
+    </ul>
+  </div>
+</div>
+
+<ul id="marquee" class="marquee">
+  <li>WEB前端开发</a> [2011-10-20]</li>
+  <li>架构设计</a> [2011-09-20]</li>
+  <li><a href="http://www.bloomylife.com/?cat=157" target="_blank">系统运维</a> [2011-10-16]</li>
+</ul>
+{% endblock %}
+{% block javascript %}
+<!-- <script src="./js/zepto.min.js"></script> -->
+<script src="./js/jquery-2.1.0.min.js"></script>
+<script src="./js/marquee.js"></script>
+<script>
+  $(function () {
+    createMarquee();
+  });
+  $(function () {
+
+    createMarquee({
+
+      // controls the speed at which the marquee moves
+      duration: 3000,
+
+      // right margin between consecutive marquees
+      padding: 0,
+
+      // class of the actual div or span that will be used to create the marquee - 
+      // multiple marquee items may be created using this item's content. 
+      // This item will be removed from the dom
+      marquee_class: '.example-marquee',
+
+      // the container div in which the marquee content will animate. 
+      container_class: '.example-container',
+
+      // a sibling item to the marqueed item  that affects - 
+      // the end point position and available space inside the container. 
+      sibling_class: '.example-sibling',
+
+      // Boolean to indicate whether pause on hover should is required. 
+      hover: false
+
+    });
+  });
+  $(function () {
+    $("#marquee").marquee({
+      yScroll: "bottom",
+      showSpeed: 850, // 初始下拉速度         , 
+      scrollSpeed: 12, // 滚动速度         , 
+      pauseSpeed: 500, // 滚动完到下一条的间隔时间         , 
+      pauseOnHover: true, // 鼠标滑向文字时是否停止滚动         , 
+      loop: -1, // 设置循环滚动次数 （-1为无限循环）         , 
+      fxEasingShow: "swing", // 缓冲效果         , 
+      fxEasingScroll: "linear", // 缓冲效果         , 
+      cssShowing: "marquee-showing" //定义class 
+
+    });
+  });
+</script>
+{% endblock %}

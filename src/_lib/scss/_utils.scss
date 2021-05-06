@@ -1,0 +1,22 @@
+// 单行省略样式
+@mixin ellipsis() {
+  // & {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  // }
+}
+// 水平margin居中
+@mixin centerBlock(){
+  display: block;
+  margin: 0 auto;
+}
+// 背景图适配
+@mixin bg($src,$size:100% auto,$position: 0 0,$repeat:no-repeat) {
+  background: {
+    image: url($src);
+    size: $size;
+    position: $position;
+    repeat: $repeat;
+  }
+}

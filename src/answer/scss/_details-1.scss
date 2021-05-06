@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+.details-1 {
+
+  // 对话框
+  .details-dialogue {
+    position: relative;
+    margin-bottom: 1rem;
+
+    &-content {
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      width: 6.5rem;
+      height: 1.8rem;
+      margin-top: 3.2rem;
+
+      background: {
+        image: url($staticUrl+'img/detail_dialogue.png');
+        size: 100%;
+        position: center;
+        repeat: no-repeat;
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        text-align: center;
+        font-size: 0.28rem;
+        line-height: 0.44rem;
+        color: #0a1571;
+        white-space: pre-line;
+        margin-top: -0.4rem;
+      }
+    }
+
+    &-content1 {
+      width: 6.56rem;
+      height: 2.42rem;
+      background-image: url($staticUrl+'img/detail_dialogue_1.png');
+    }
+
+    // 机器人
+    &-robote {
+      position: absolute;
+      left: 50%;
+      top: -2.06rem;
+      margin-left: -1.54rem;
+      width: 3.09rem;
+      height: 2.34rem;
+
+      background: {
+        image: url($staticUrl+'img/detail_robot.png');
+        size: 100%;
+        position: center;
+        repeat: no-repeat;
+      }
+    }
+
+    &-robote1 {
+      top: -2.2rem;
+    }
+
+    // 飞碟
+    &-ufo {
+      position: absolute;
+      z-index: 1;
+      right: 0.12rem;
+      top: -0.36rem;
+      width: 2.24rem;
+      height: 1.31rem;
+
+      background: {
+        image: url($staticUrl+'img/detail_ufo.png');
+        size: 100%;
+        position: center;
+        repeat: no-repeat;
+      }
+    }
+
+    &-ufo0 {
+      top: 0.7rem;
+    }
+
+    &-ufo1 {
+      right: 0.9rem;
+    }
+  }
+
+  // 提问
+  .details-1-text {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 5.51rem;
+    height: 6.44rem;
+
+    background: {
+      image: url($staticUrl+'img/detail_1_text.png');
+      size: 100%;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+
+  // 按钮
+  .details-1-btns {
+    position: relative;
+
+    .details-1-btns-item {
+      display: block;
+      margin: 0 auto;
+      text-decoration: none;
+      color: #f7f9ff;
+      font-size: .36rem;
+      width: 4.67rem;
+      height: .9rem;
+      line-height: .8rem;
+      text-align: center;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      background: {
+        image: url($staticUrl+'img/detail_btn.png');
+        size: 100%;
+        position: center;
+        repeat: no-repeat;
+      }
+    }
+
+    .details-btns-1 {
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+
+.details-dialogue-hand {
+  position: absolute;
+  left: 1.8rem;
+  top: -1.25rem;
+  width: 0.83rem;
+  height: 1.74rem;
+
+  background: {
+    image: url($staticUrl+'img/detail_hand.png');
+    size: 100%;
+    position: center;
+    repeat: no-repeat;
+  }
+}

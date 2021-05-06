@@ -1,0 +1,2 @@
+@keyframes a{0%{opacity:0;transform:translate3d(0,1.5rem,0)}to{opacity:1;transform:translateZ(0)}}.details-dialogue.dialogue{animation:a .6s .5s ease both}.details-answer-list.answer,.details-scenes-list.scenes{animation:a .6s 1s ease both}.details-nine-title{opacity:1;transition:all .5s}.details-nine-title.ani{opacity:0}.details-nine-btn{opacity:1;transition:all .5s}.details-nine-btn.aniBtn{opacity:0}@keyframes b{0%{opacity:0}to{opacity:1}}.page{display:none!important}.page.anin{display:block!important;animation:b 1.3s}
+/*# sourceMappingURL=../maps/css/ani.min.css.map */

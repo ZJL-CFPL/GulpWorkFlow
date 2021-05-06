@@ -1,0 +1,116 @@
+.details-nine {
+  &-title {
+    position: relative;
+    width: 6.7rem;
+    height: 3.47rem;
+    @extend .img-item;
+    background-image: url($staticUrl+'img/detail_9_title.png');
+    margin: 3.1rem auto 0;
+  }
+
+  &-btn {
+    display: block;
+    position: relative;
+    width: 3.67rem;
+    height: 0.9rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #f7f9ff;
+    font-size: 0.36rem;
+    @extend .img-item;
+    background-image: url($staticUrl+'img/index_btn.png');
+    background-size: 3.67rem 0.9rem;
+    margin: 1.1rem auto 0;
+    animation: shake 2s 1s infinite both;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  &.show {
+    display: block;
+  }
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5)
+  }
+
+  &-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-body {
+    position: relative;
+    width: 6.5rem;
+    height: 8.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: {
+      image: url($staticUrl+'img/detail_9_bg.png');
+      size: 100% 100%;
+      repeat: no-repeat;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    right: 0.9rem;
+    top: 1.7rem;
+    width: 0.49rem;
+    height: 0.49rem;
+    box-sizing: border-box;
+
+    background: {
+      image: url($staticUrl+'img/modal_close.png');
+      size: 0.49rem 0.49rem;
+      repeat: no-repeat;
+    }
+
+    z-index: 9;
+  }
+
+  &-ewm {
+    margin-top: 1rem;
+
+    img {
+      width: 3.17rem;
+      height: 3.17rem;
+    }
+  }
+
+  &-ufo {
+    position: absolute;
+    width: 1.33rem;
+    left: 0.2rem;
+    top: 1.4rem;
+    height: 1.32rem;
+
+    background: {
+      image: url($staticUrl+'img/detail_ufo_3.png');
+      size: 100% 100%;
+      repeat: no-repeat;
+    }
+
+    animation: ufo 1s infinite alternate linear;
+  }
+}

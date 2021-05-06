@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  {% block meta %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% endblock %}
+    <title>
+    {% block title %}
+      PERPOWER PROJECT 
+    {% endblock %}
+    </title>
+  {% block stylesheet %}
+    <link rel="stylesheet" href="css/style.min.css">
+  {% endblock %}
+  {% block adaption %}
+    <script src="js/adaptive.js"></script>
+    <script>
+      window['adaptive'].desinWidth = 750;
+      window['adaptive'].maxRate = 0.63;
+      window['adaptive'].baseFont = 24;
+      window['adaptive'].init();
+    </script>
+  {% endblock %}
+</head>
+<body>
+  {% block main %}
+    hello world
+  {% endblock %}
+  {% block javascript %}
+    
+  {% endblock %}
+</body>
+</html>

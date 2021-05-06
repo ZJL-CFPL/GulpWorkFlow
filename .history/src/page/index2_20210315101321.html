@@ -1,0 +1,79 @@
+{% extends "../_njk/base.njk" %}
+{% block main %}
+<!-- <div class="box-bg"></div> -->
+<div class="container">
+  <div class="marquee">
+    <ul class="marquee-items">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+  </div>
+</div>
+<div id="app">
+  <div class="top">
+    <p>
+      <span class="tips">由于大促期间订单量激增，您的订单送达时效可能出现延迟，请您耐心等待~</span>
+      <span>由于大促期间订单量激增，您的订单送达时效可能出现延迟，请您耐心等待~</span>
+    </p>
+  </div>
+  <div class="main">
+    <h6>然后这里放的就是卤煮</h6>
+    <h4>外放堪称手机圈</h4>
+    <h2>宇宙无敌第一</h2>
+    <h6>小米10 Pro</h6>
+    <h2>wo不接受争辩</h2>
+    <h3>·</h3>
+    <h3>·</h3>
+    <h3>·</h3>
+    <h3>·</h3>
+  </div>
+</div>
+{% endblock %}
+{% block javascript %}
+<!-- <script src="./js/zepto.min.js"></script> -->
+<script src="./js/jquery-2.1.0.min.js"></script>
+<script src="./js/marquee.js"></script>
+<script>
+  $(function () {
+    createMarquee();
+  });
+  $('.marquee-with-options').marquee({
+    speed: 5000,
+    gap: 50,
+    delayBeforeStart: 0,
+    direction: 'left',
+    duplicated: true,
+    pauseOnHover: true
+  });
+  $(function () {
+
+    createMarquee({
+
+      // controls the speed at which the marquee moves
+      duration: 30000,
+
+      // right margin between consecutive marquees
+      padding: 20,
+
+      // class of the actual div or span that will be used to create the marquee - 
+      // multiple marquee items may be created using this item's content. 
+      // This item will be removed from the dom
+      marquee_class: '.example-marquee',
+
+      // the container div in which the marquee content will animate. 
+      container_class: '.example-container',
+
+      // a sibling item to the marqueed item  that affects - 
+      // the end point position and available space inside the container. 
+      sibling_class: '.example-sibling',
+
+      // Boolean to indicate whether pause on hover should is required. 
+      hover: false
+
+    });
+  });
+</script>
+{% endblock %}
