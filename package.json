@@ -1,7 +1,7 @@
 {
-  "name": "h5-project",
+  "name": "multiple pages-project",
   "version": "1.0.0",
-  "description": "perpower h5 project",
+  "description": "multiple pages",
   "main": "index.js",
   "scripts": {
     "start": "node bin/www",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/perpower/H5-Project.git"
+    "url": "https://github.com/ZJL-CFPL/GulpWorkFlow.git"
   },
   "author": "",
   "license": "ISC",
