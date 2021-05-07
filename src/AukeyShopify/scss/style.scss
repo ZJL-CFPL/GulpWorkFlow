@@ -94,6 +94,23 @@
       }
     }
   }
+  .sr-desc-card .sr-desc-li{
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    padding-left: 25px;
+    position: relative;
+    &::before{
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      background: #ccc;
+      position: absolute;
+      left: 3px;
+      top: 10px;
+    }
+  }
 }
 @media (max-width: 1024px){
   .sr-product-description .sr-pic-block{
@@ -118,5 +135,8 @@
   .sr-product-description p{
     font-size: 16px;
     padding: 0 20px 20px;
+  }
+  .sr-product-description .sr-desc-block-list li{
+    font-size: 15px;
   }
 }
