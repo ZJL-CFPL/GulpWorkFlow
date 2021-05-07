@@ -1,9 +1,9 @@
 @charset "utf-8";
-// *{
-//   margin: 0;
-//   padding: 0;
-// }
-.wrapper-sr{
+*{
+  margin: 0;
+  padding: 0;
+}
+.sr-product-description{
   max-width: 1480px;
   padding: 0 20px;
   margin: 0 auto;
@@ -14,9 +14,13 @@
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
+    margin-bottom: 20px;
+    font-family: "mont-bold", sans-serif;
   }
   h1{
     font-size: 40px;
+    padding: 0px 80px;
+    font-family: mont-heavy;
   }
   h2{
     font-size: 22px;
@@ -29,9 +33,19 @@
     font-size: 16px;
   }
   p{
-    font-size: inherit;
     font-weight: inherit;
+    font-size: 20px;
+    line-height: 1.6em;
+    padding: 0px 80px 20px;
+    margin-bottom: 20px;
+    font-family: Montserrat;
   }
+  img{
+    display: block;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
   .sr{
     &-pic{
       &-block{
@@ -43,17 +57,15 @@
       }
     }
     &-desc{
+      &-card{
+        font-family: "mont-bold", sans-serif;
+        p{
+          padding: 0 0 20px 0;
+        }
+      }
       &-block{
         margin: 20px 0;
         padding: 20px 0;
-        h1, p{
-          padding: 0px 80px;
-        }
-        p{
-          padding-bottom: 20px;
-          font-size: 20px;
-          line-height: 1.6em;
-        }
         &-center{
           text-align: center;
         }
@@ -79,34 +91,32 @@
         &-4{
           width: calc(33.333333333333336% - 6.666666666666667px);
         }
-        
       }
     }
   }
 }
 @media (max-width: 1024px){
-  .sr-pic-block{
+  .sr-product-description .sr-pic-block{
     width: 100%;
   }
-  .wrapper-sr .sr-desc-block{
+  .sr-product-description .sr-desc-block{
     margin: 16px 0;
     padding: 16px 0;
   }
-  .wrapper-sr .sr-desc-block p{
+  .sr-product-description p{
     padding: 0 60px;
   }
 }
 @media (max-width: 767px){
-  .wrapper-sr .sr-desc-col-4{
+  .sr-product-description .sr-desc-col-4{
     width: 100%;
   }
-  .wrapper-sr .sr-desc-block h1, .wrapper-sr .sr-desc-block p{
+  .sr-product-description h1{
+    font-size: 28px;
     padding: 0 20px;
   }
-  .wrapper-sr h1{
-    font-size: 28px;
-  }
-  .wrapper-sr .sr-desc-block p{
+  .sr-product-description p{
     font-size: 16px;
+    padding: 0 20px 20px;
   }
 }
