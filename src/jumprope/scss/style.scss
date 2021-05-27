@@ -1,0 +1,203 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+.jumprope{
+  &-container{
+    max-width: 991px;
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+  }
+  &-pic{
+    display: block;
+    font-size: 0;
+    width: 100%;
+    &-part2{
+      margin-top: 15%;
+    }
+  }
+  &-word{
+    font-size: 14px;
+    line-height: 1.78;   
+  }
+  &-part{
+    position: relative;
+  }
+  &-content{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &-part1{
+    &-top{
+      font-size: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background: #000;
+      color: #fff;
+      line-height: 1.38;
+      text-align: center;
+    }
+  }
+  
+  &-nav{
+    position: relative;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    &-word{
+      font-size: 14px;
+      padding-right: 60px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-weight: bold;
+    }
+    &-btn{
+      display: block;
+      width: 55px;
+      height: 26px;
+      background: url('../img/jumprope_pic-btn-buy.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      margin-top: -13px;
+    }
+    &-fixed{
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9;
+    }
+  }
+  &-part2{
+    &-desc{
+      position: absolute;
+      left: 0;
+      top: 28.8%;
+      color: #fff;
+    }
+  }
+  &-part3{
+    padding-top: 12%;
+    padding-bottom: 8%;
+  }
+  &-part5{
+    padding-top: 12%;
+    padding-bottom: 12%;
+    .jumprope-word{
+      margin-top: 10%;
+    }
+  }
+  &-list{
+    padding-top: 10%;
+    padding-bottom: 12%;
+    &-item{
+      font-size: 14px;
+      list-style: none;
+      position: relative;
+      line-height: 1.48;
+      margin-bottom: 3px;
+      &::before{
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: #c199f1;
+        border-radius: 100%;
+        position: absolute;
+        left: -10px;
+        top: 8px;
+      }
+    }
+  }
+  &-params{
+    padding-top: 10%;
+    padding-bottom: 12%;
+    &-list{
+      padding: 10% 0 8% 0;
+    }
+    &-item{
+      font-size: 0;
+      list-style: none;
+      padding: 4% 0 4% 0;
+      border-bottom: 1px #c3c3c3 solid;
+    }
+    &-label{
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    &-desc{
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 15px;
+      text-align: right;
+    }
+  }
+  &-footer{
+    padding-bottom: 12%;
+    &-title{
+      font-size: 14px;
+      margin-bottom: 5%;
+      font-weight: bold;
+    }
+    &-btn{
+      margin-bottom: 2%;
+    }
+    &-link{
+      display: inline-block;
+      .jumprope-pic{
+        width: 92px;
+        margin-right: 10px;
+      }
+      .jumprope-pic-health{
+        margin-top: 15%;
+      }
+    }
+    &-desc{
+      font-size: 12px;
+    }
+  }
+  &-swiper{
+    margin-top: 5%;
+    &-desc{
+      font-size: 14px;
+      font-weight: lighter;
+      margin-top: 10%;
+      line-height: 1.78;
+      margin-bottom: 5%;
+    }
+  }
+}
+@media (max-width:340px) {
+  .jumprope-content{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .jumprope-word{
+    line-height: 1.58;
+  }
+}
+@media (min-width:550px) {
+  .jumprope-word{
+    font-size: 20px;
+  }
+  .jumprope-list-item{
+    font-size: 20px;
+  }
+  .jumprope-params-desc, .jumprope-params-label{
+    font-size: 20px;
+  }
+  .jumprope-footer-title{
+    font-size: 20px;
+  }
+  .jumprope-footer-desc{
+    font-size: 18px;
+  }
+}
