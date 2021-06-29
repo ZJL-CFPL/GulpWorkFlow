@@ -1,0 +1,22 @@
+{% extends "./_njk/base.njk" %}
+{% block stylesheet %}
+  <link rel="stylesheet" href="./css/lp.min.css">
+{% endblock %}
+{% block main %}
+    <div class="lp-container">
+       <img class="lp-pic lp-pic-pc" src="https://cdn.shopify.com/s/files/1/0519/2148/6021/files/lp-bg-pc.jpg?v=1624260073" alt="">
+       <img class="lp-pic lp-pic-mb" src="https://cdn.shopify.com/s/files/1/0519/2148/6021/files/lp-bg-mb.jpg?v=1624260072" alt="">
+       <div class="lp-form">
+        <form action="/contact#lp" method="post" name="mc-embedded-subscribe-form" id="SubscribeForm" class="input-group contact-form" accept-charset="UTF-8">
+          <input type="hidden" name="form_type" value="customer">
+          <input type="hidden" name="utf8" value="✓">
+          <input type="hidden" name="contact[tags]" value="{{template}}">
+          <input type="hidden" name="contact[tags]" value="new_customer">
+          <input type="email" value="" id="lp-email" placeholder="Enter your email here" name="contact[email]" class="input-group-field subscribe-email-inp" aria-label="Email Address" aria-required="true" required  pattern="^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$" >
+          <span class="input-group-btn">
+            <input type="submit" class="btn subscribe-email-submit" value="SUBSCRIBE">
+          </span>
+        </form>
+       </div>
+    </div>
+{% endblock %}

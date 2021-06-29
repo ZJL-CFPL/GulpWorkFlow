@@ -24,6 +24,7 @@
   }
   &-part{
     position: relative;
+    z-index: 1;
   }
   &-content{
     padding-left: 30px;
@@ -31,8 +32,9 @@
   }
 
   &-part1{
+    z-index: 2;
     &-top{
-      font-size: 15px;
+      font-size: 14px;
       padding-top: 5px;
       padding-bottom: 5px;
       background: #000;
@@ -47,18 +49,19 @@
     width: 100%;
     background: #fff;
     box-sizing: border-box;
+    box-shadow: 0 0px 3px 0 #0000fa;;
     &-word{
       font-size: 14px;
       padding-right: 60px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
       font-weight: bold;
     }
     &-btn{
       display: block;
       width: 55px;
       height: 26px;
-      background: url('../img/jumprope_pic-btn-buy.png');
+      background: url('https://cdn.shopify.com/s/files/1/0519/2148/6021/files/jumprope_pic-btn-buy.png?v=1622168961');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       position: absolute;
@@ -70,7 +73,7 @@
       position: fixed;
       left: 0;
       top: 0;
-      z-index: 9;
+      z-index: 2;
     }
   }
   &-part2{
