@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+  
+.container{
+  font-size: .24rem;
+  min-height: 100vh;
+  background-color: #F3F3F3;
+}
+.bluewill-home{
+  padding-bottom: 1.2rem;
+  .bluewill{
+    &-slider{
+      width: 100%;
+      margin-bottom: .2rem;
+      &-item{
+        width: 7.5rem;
+        height: 4.7rem;
+        img{
+          display: block;
+          font-size: 0;
+          width: 100%;
+          height: 4.7rem;
+          pointer-events: none;
+        }
+      }
+    }
+    &-banner-placeholder{
+      width: 7.5rem;
+      height: 4.7rem;
+    }
+    &-href{
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      position: relative;
+    }
+    &-collection{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      background: #fff;
+      padding: .2rem 0;
+      &-item{
+        width: 20%;
+      }
+      &-icon{
+        display: block;
+        font-size: 0;
+        width: .9rem;
+        margin: 0 auto .1rem;
+      }
+      &-text{
+        display: block;
+        text-align: center;
+        color: #8E96A4;
+        font-size: .24rem;
+        line-height: 1.38;
+      }
+    }
+    &-sell{
+      margin-top: .4rem;
+      &-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 .2rem .2rem;
+      }
+      &-item{
+        width: 3.06rem;
+        background: #fff;
+        padding: .4rem 0.2rem .28rem;
+        border-radius: .2rem;
+        margin-bottom: .2rem;
+        list-style: none;
+      }
+      &-pic{
+        display: block;
+        font-size: 0;
+        width: 2.6rem;
+        height: 2.6rem;
+        margin: 0 auto .4rem;
+      }
+      &-title{
+        font-size: .24rem;
+        color: #8E96A4;
+        line-height: .3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        position: relative;
+        height: .62rem;
+        overflow: hidden;
+        margin-bottom: .16rem;
+        &::after {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          padding: 0 .2rem 0 .1rem;
+          content: '...';
+          background: #fff;
+        }
+      }
+      &-price{
+        font-size: 0;
+        line-height: 1.58;
+        &-save{
+          font-size: .24rem;
+          color: #FE5049;
+          font-weight: bold;
+          display: inline-block;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: .1rem;
+          span{
+            font-size: .32rem;
+          }
+        }
+        &-pre{
+          font-size: .26rem;
+          color: #8E96A4;
+          text-decoration: line-through;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      &-discount{
+        display: block;
+        width: .9rem;
+        color: #fff;
+        font-size: .24rem;
+        padding: .06rem 0;
+        position: absolute;
+        left: -.2rem;
+        top: -.1rem;
+        text-align: center;
+        background: #FE5049;
+        border-top-right-radius: .06rem;
+        border-bottom-right-radius: .06rem;
+        line-height: 1.2;
+      }
+    }
+    &-nav{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      background: #fff;
+      padding: .2rem .2rem .1rem;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      &-item{
+        position: relative;
+        &-active{
+          .bluewill-nav-text{
+            color: #FE5049;
+          }
+          &::before{
+            content: "";
+            width: 1.1rem;
+            height: 1.1rem;
+            border-radius: 1.1rem;
+            background: #fff;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -0.45rem;
+          }
+        }
+      }
+      &-icon{
+        width: .8rem;
+        height: .4rem;
+        display: block;
+        font-size: 0;
+        margin: 0 auto .1rem;
+      }
+      &-text{
+        font-size: .28rem;
+        display: block;
+        text-align: center;
+        color: #8E96A4;
+        line-height: 1.38;
+      }
+    }
+  }
+}

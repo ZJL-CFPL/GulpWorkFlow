@@ -81,8 +81,17 @@
       margin: 60px auto 0;
       width: 180px;
       height: 60px;
-      background: url('https://cdn.shopify.com/s/files/1/0560/1276/7399/files/aboutus-button-subscribe_ddca11e6-09d4-456a-a2a0-597335bb537a.png?v=1624951210') no-repeat;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 5px;
       background-size: 100% 100%;
+      color: #fff;
+      background: linear-gradient(4deg,#ec6338 -2%,#ff2c5E);
+      text-decoration: none;
+      &:hover{
+        background: #f72a17;
+        background-image: none;
+      }
     }
   }
   &-quality{
@@ -239,6 +248,7 @@
     margin: 40px auto 0;
     width: 150px;
     height: 50px;
+    line-height: 50px;
   }
   .aboutus-title{
     font-size: 28px;
@@ -281,9 +291,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .aboutus-banner{
-    height: 600px;
-  }
   .aboutus-banner-title{
     font-size: 28px;
   }
@@ -309,6 +316,8 @@
   .aboutus-intro-button{
     width: 120px;
     height: 40px;
+    line-height: 40px;
+    font-size: 12px;
   }
   .aboutus-title{
     font-size: 18px;
@@ -342,7 +351,7 @@
     order: 1;
   }
   .aboutus-service .aboutus-show{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .aboutus-tech-title{
     font-size: 15px;
@@ -355,5 +364,19 @@
   }
   .aboutus-tech-list{
     margin-bottom: 40px;
+  }
+  .aboutus-banner{
+    height: 460px;
+    background-size: 1380px 460px;
+    background-position: top center;
+  }
+}
+
+@media (max-width:350px) {
+  .aboutus-intro{
+    height: auto;
+  }
+  .aboutus-intro-content{
+    padding-bottom: 40px;
   }
 }
